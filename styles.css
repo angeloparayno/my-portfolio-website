@@ -34,12 +34,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.5;
-
-  position: relative;
 }
 
 nav {
-  position:fixed;
+  position:static;
   width: 100%;
  
   background-color: var(--brand-color-ut-orange);
@@ -48,22 +46,15 @@ nav {
 /* Styles for the navigation menu */
 nav ul {
   list-style-type: none;
+  text-align: center;
 }
-
 nav ul li {
   display: inline-block;
   margin-right: 10px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: white;
-}
-
-#main-background {
-  max-width: 1280px;
-  margin: auto;
-  background-color: white;
 }
 
 /* Styles for the sections */
@@ -110,13 +101,6 @@ form button {
 footer {
   background-color: var(--brand-color-prussian-blue);
   color: white;
-  
-
-  position:relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  
 }
 
 /* --- */
@@ -124,23 +108,31 @@ footer {
 .flex-container-row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .flex-container-row-reverse {
   display: flex;
   flex-flow: row wrap-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 .flex-container-column {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
-
-
+  justify-content: center;
+  align-items: center;
 }
-
 .flex-item {
   flex: 1;
+}
+
+
+
+#main-background {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  background-color: white;
 }
 
 ul {
@@ -148,60 +140,57 @@ ul {
   background-color: var(--brand-color-ut-orange);
 }
 
-.jumbotron {
-  min-height: 700px;
-  min-width: 250px;
- 
-  height: auto;
+#jumbotron {
+  width: auto;
+  height: 800px;
   border: 2px solid black;
-}
 
+  background-image: url(assets/jumbotron-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
 #profile-container {
-
-  margin: 25% auto auto auto;
-  max-width: 600px;
-
   border: 2px solid blue;
+  margin-bottom: 20px;
 }
-
-.profile-name-container {
+#profile-name-container {
   margin: auto;
-  min-width: 240px;
   border: 2px solid green;
 }
 #welcome-text {
   text-align: center;
   margin:auto;
   border: 2px solid green;
-
 }
-
-.profile-image-container {
-  margin: auto;
-  min-width: 240px;
+#profile-image-container {
+  display: flex;
   border: 2px solid red;
 }
 #profile-image-circle {
-  width: 175px;
-  height: 175px;
+  width: 225px;
+  height: 225px;
+  
   border-radius: 50%;
   margin: auto;
   border: 2px solid red;
+
+  background-image: url(assets/profile-pic.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-#title-roles-container {
-  margin: auto auto auto auto;
-  max-width: 600px;
-}
 #title-roles {
   text-align: center;
   list-style-type: none;
+  margin-bottom: 20px;
 }
+
 #title-roles li {
   display: inline-block;
   margin-right: 10px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
 }
