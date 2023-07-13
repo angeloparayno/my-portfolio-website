@@ -1,0 +1,207 @@
+:root {
+  --primary-color: rgb(77,93,87);
+  --secondary-color: rgb(238,207,73);
+  --gray1-color: rgb(51,51,51);
+  --gray2-color: rgb(102,102,102);
+  --gray3-color: rgb(153,153,153);
+  --gray4-color: rgb(204,204,204);
+  --background-theme-color: rgb(241,229,216);
+  --background-body: rgb(237,239,238);
+
+  --brand-color-sky-blue: #8ECAE6;
+  --brand-color-blue-green: #219EBC;
+  --brand-color-prussian-blue: #023047;
+  --brand-color-selective-yellow: #FFB703;
+  --brand-color-ut-orange: #FB8500;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box;
+}
+
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: var(--background-body);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+
+  position: relative;
+}
+
+nav {
+  position:fixed;
+  width: 100%;
+ 
+  background-color: var(--brand-color-ut-orange);
+}
+
+/* Styles for the navigation menu */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-background {
+  max-width: 1280px;
+  margin: auto;
+  background-color: white;
+}
+
+/* Styles for the sections */
+section {
+  padding: 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* Styles for the projects section */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+
+
+/* Styles for the contact form */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--brand-color-prussian-blue);
+  color: white;
+  
+
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+/* --- */
+
+.flex-container-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-container-row-reverse {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+}
+.flex-container-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+
+
+}
+
+.flex-item {
+  flex: 1;
+}
+
+ul {
+  display: block;
+  background-color: var(--brand-color-ut-orange);
+}
+
+.jumbotron {
+  min-height: 700px;
+  min-width: 250px;
+ 
+  height: auto;
+  border: 2px solid black;
+}
+
+#profile-container {
+
+  margin: 25% auto auto auto;
+  max-width: 600px;
+
+  border: 2px solid blue;
+}
+
+.profile-name-container {
+  margin: auto;
+  min-width: 240px;
+  border: 2px solid green;
+}
+#welcome-text {
+  text-align: center;
+  margin:auto;
+  border: 2px solid green;
+
+}
+
+.profile-image-container {
+  margin: auto;
+  min-width: 240px;
+  border: 2px solid red;
+}
+#profile-image-circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: auto;
+  border: 2px solid red;
+}
+
+#title-roles-container {
+  margin: auto auto auto auto;
+  max-width: 600px;
+}
+#title-roles {
+  text-align: center;
+  list-style-type: none;
+}
+#title-roles li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
