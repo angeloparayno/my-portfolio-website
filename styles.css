@@ -68,7 +68,7 @@ section h2 {
 
 /* Styles for the projects section */
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .project h3 {
@@ -133,6 +133,8 @@ footer {
   margin-right: auto;
   max-width: 1280px;
   background-color: white;
+
+  flex-grow: 1;
 }
 
 ul {
