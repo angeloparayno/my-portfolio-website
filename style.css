@@ -180,7 +180,7 @@ form button {
   width: auto;
   height: 800px;
   border-radius: var(--radius);
-  background-image: url(assets/jumbotron-img-1.jpg);
+  background-image: url(assets/jumbotron-img.jpg);
   background-size: cover;
   background-position: center;
 }
