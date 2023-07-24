@@ -15,9 +15,16 @@
     --brand-color-ut-orange: #FB8500;
   
     --radius: 0.2rem;
+    /*
     --dev-outline-1:red;
     --dev-outline-2:green;
     --dev-outline-3:blue;
+    */
+    
+    --dev-outline-1:clear;
+    --dev-outline-2:clear;
+    --dev-outline-3:clear;
+    
   }
   
 *, 
@@ -43,13 +50,12 @@ body {
   flex-direction: column;
 }
 main {
-  flex-grow: 1;
+  flex-grow:1;
+  display: flex;
+  justify-content: center;
 }
 #main-background {
-  border: 2px solid var(--dev-outline-1);
-
-  margin-left: auto;
-  margin-right: auto;
+  
   max-width: 1280px;
 
   background-color: white;
@@ -81,7 +87,7 @@ main {
   width: 100%;
 }
 #nav-list {
-  background-color: var(--brand-color-prussian-blue);
+  background-color: var(--gray1-color);
   /*box-shadow: 0px 0px 10px black;*/
   margin: 0;
   padding: 1rem 0;
@@ -102,7 +108,7 @@ main {
   transition: all 200ms ease-in;
 }
 .nav-item a:hover {
-  color: #219EBC;
+  color: #FB8500;
 }
 .nav-item:first-child {
   margin-right: auto;
@@ -176,10 +182,9 @@ form button {
   width: auto;
   height: 800px;
   
-  border: 2px solid black;
   border-radius:var(--radius);
 
-  background-image: url(assets/jumbotron-img.jpg);
+  background-image: url(assets/jumbotron-img-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -207,7 +212,7 @@ form button {
   border-radius: 50%;
   border: 2px solid var(--dev-outline-3);
 
-  background-image: url(assets/profile-pic.jpg);
+  background-image: url(assets/profile-pic-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -254,19 +259,18 @@ h1 {
   font-size: 3rem;
   color: white;
 }
-
+/* ---------- Footer ---------- */
 footer {
-  border: 4px solid green;
   color: white;
 }
-
 #footer-background {
   padding: 1em;
-  background-color: var(--brand-color-prussian-blue);
+  border-radius:var(--radius);
+  background-color: var(--gray1-color);
   max-width: 1280px;
 }
 footer div div {
-  border: 4px solid white;
+  border: 2px solid var(--dev-outline-1);
   background-color: clear;
   max-width: 640px;
 }
@@ -275,7 +279,7 @@ footer div div {
   align-items: end;
 }
 #footer-left p {
-  border: 2px solid red;
+  border: 2px solid var(--dev-outline-2);
 }
 #footer-right {
   text-align: right;
@@ -283,8 +287,4 @@ footer div div {
 
 #about {
   padding: 20px;
-}
-
-h1 {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
