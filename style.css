@@ -5,14 +5,14 @@
   --gray2-color: rgb(102,102,102);
   --gray3-color: rgb(153,153,153);
   --gray4-color: rgb(204,204,204);
-  --background-theme-color: rgb(241,229,216);
+  --background-theme-color: rgb(51,51,51);
   --background-body: rgb(237,239,238);
   --brand-color-sky-blue: #8ECAE6;
   --brand-color-blue-green: #219EBC;
   --brand-color-prussian-blue: #023047;
   --brand-color-selective-yellow: #FFB703;
   --brand-color-ut-orange: #FB8500;
-  --radius: 0.2rem;
+  --radius: 0;
   /*
   --dev-outline-1:red;
   --dev-outline-2:green;
@@ -271,7 +271,7 @@ footer {
 
 #footer-background {
   padding: 1em;
-  /*border-radius:var(--radius);*/
+  border-radius: var(--radius);
   background-color: var(--gray1-color);
   max-width: 1280px;
 }
