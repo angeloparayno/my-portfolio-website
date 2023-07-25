@@ -13,11 +13,9 @@
   --brand-color-selective-yellow: #FFB703;
   --brand-color-ut-orange: #FB8500;
   --radius: 0;
-  /*
   --dev-outline-1:red;
   --dev-outline-2:green;
   --dev-outline-3:blue;
-  */
 }
 
 *,
@@ -43,18 +41,6 @@ body {
   font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
-}
-
-#content {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
-
-#content-background {
-  max-width: 1280px;
-  background-color: white;
-  padding: 20px 0;
 }
 
 /* ---------- FLEX CLASS ---------- */
@@ -137,47 +123,6 @@ body {
   background-color: #023047;
 }
 
-/* ---------- NAV END---------- */
-/* Styles for the sections */
-section {
-  padding: 0;
-}
-
-section h2 {
-  margin-bottom: 20px;
-}
-
-/* Styles for the projects section */
-.project {
-  margin-bottom: 0;
-}
-
-.project h3 {
-  margin-bottom: 10px;
-}
-
-/* Styles for the contact form */
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input,
-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-/* --- */
 /* ---------- Jumbotron ---------- */
 #jumbotron {
   width: auto;
@@ -263,6 +208,59 @@ form button {
   text-shadow: 0px 0px 20px clear;
 }
 
+/* ---------- Main ---------- */
+#content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#content-background {
+  max-width: 1280px;
+  background-color: white;
+  padding: 2rem;
+}
+
+/* Styles for the sections */
+section {
+  padding: 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* Styles for the projects section */
+.project {
+  margin-bottom: 0;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+/* Styles for the contact form */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- */
 h1 {
   font-size: 3rem;
   color: white;
@@ -271,34 +269,46 @@ h1 {
 /* ---------- Footer ---------- */
 footer {
   color: white;
-}
-
-#footer-background {
-  padding: 1em;
-  border-radius: var(--radius);
   background-color: var(--gray1-color);
 }
 
-footer div {
+#footer-background {
+  padding: 1rem;
+  border-radius: var(--radius);
   border: 2px solid var(--dev-outline-1);
 }
 
-#footer-left {
-  justify-content: left;
-  align-items: end;
-  border: 2px solid var(--dev-outline-2);
+@media (max-width: 1024px) {
+  #footer-left {
+    justify-content: center;
+    min-width: 512px;
+    border: 2px solid var(--dev-outline-2);
+  }
+  #footer-left p {
+    text-align: center;
+    border: 2px solid var(--dev-outline-3);
+  }
+  #footer-right {
+    text-align: center;
+    min-width: 512px;
+    border: 2px solid var(--dev-outline-2);
+  }
 }
-
-#footer-left p {
-  text-align: center;
-  border: 2px solid var(--dev-outline-3);
+@media (min-width: 1025px) {
+  #footer-left {
+    justify-content: left;
+    align-items: end;
+    border: 2px solid var(--dev-outline-2);
+  }
+  #footer-left p {
+    text-align: center;
+    border: 2px solid var(--dev-outline-3);
+  }
+  #footer-right {
+    text-align: right;
+    border: 2px solid var(--dev-outline-2);
+  }
 }
-
-#footer-right {
-  text-align: right;
-  border: 2px solid var(--dev-outline-2);
-}
-
 p {
   line-height: 2rem;
 }/*# sourceMappingURL=style.css.map */
