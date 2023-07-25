@@ -18,9 +18,6 @@
   --dev-outline-2:green;
   --dev-outline-3:blue;
   */
-  --dev-outline-1:clear;
-  --dev-outline-2:clear;
-  --dev-outline-3:clear;
 }
 
 *,
@@ -42,21 +39,22 @@ html {
 body {
   height: 100%;
   min-height: 100vh;
-  background-color: var(--background-body);
+  background-color: white;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
 }
 
-main {
+#content {
   flex-grow: 1;
   display: flex;
   justify-content: center;
 }
 
-#main-background {
+#content-background {
   max-width: 1280px;
   background-color: white;
+  padding: 20px 0;
 }
 
 /* ---------- FLEX CLASS ---------- */
@@ -64,13 +62,13 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-container-row-reverse {
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: center;
-  align-items: center;
 }
 
 .flex-container-column {
@@ -86,12 +84,13 @@ main {
 
 /* ---------- NAV ---------- */
 #nav-bar {
+  background-color: var(--gray1-color);
   position: relative;
   width: 100%;
 }
 
 #nav-list {
-  background-color: var(--gray1-color);
+  font-weight: bold;
   /*box-shadow: 0px 0px 10px black;*/
   margin: 0;
   padding: 1rem 0;
@@ -107,7 +106,7 @@ main {
 
 .nav-item a {
   text-decoration: none;
-  color: white;
+  color: var(--gray4-color);
   font-size: 1.5rem;
   transition: all 200ms ease-in;
 }
@@ -191,6 +190,7 @@ form button {
 
 /* ---------- Jumbotron - Welcome Message & Photo Container ---------- */
 #profile-container {
+  align-items: center;
   border: 2px solid var(--dev-outline-1);
 }
 
@@ -277,28 +277,28 @@ footer {
   padding: 1em;
   border-radius: var(--radius);
   background-color: var(--gray1-color);
-  max-width: 1280px;
 }
 
-footer div div {
+footer div {
   border: 2px solid var(--dev-outline-1);
-  background-color: clear;
-  max-width: 640px;
 }
 
 #footer-left {
   justify-content: left;
   align-items: end;
+  border: 2px solid var(--dev-outline-2);
 }
 
 #footer-left p {
-  border: 2px solid var(--dev-outline-2);
+  text-align: center;
+  border: 2px solid var(--dev-outline-3);
 }
 
 #footer-right {
   text-align: right;
+  border: 2px solid var(--dev-outline-2);
 }
 
-#about {
-  padding: 20px;
+p {
+  line-height: 2rem;
 }/*# sourceMappingURL=style.css.map */
