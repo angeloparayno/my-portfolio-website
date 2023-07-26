@@ -8,10 +8,11 @@
   <meta name="description" content="Angelo Parayno">
   <meta name="keywords" content="resturant,food,cuisine">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="style.css">
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- HEADER | NAV -->
@@ -20,17 +21,25 @@
     <i class="fa-solid fa-bars" style="color: #000000;"></i>
     <i class="fa-solid fa-x" style="color: #000000;"></i>
     -->
-    <nav id="nav-bar">
-      <ul id="nav-list" class="flex-container-row">
-        <li class="nav-item"><a href="#home"></a></li>
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-        <li class="nav-item">
-          <button class="btn-primary">Call Out</button>
-        </li>
-      </ul>
+    <nav id="navbar">
+      <div id="logo-container">
+        <a href="#navbar"><i class="fa-solid fa-ghost logo"></i></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a> 
+      <div id="navbar-list">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="btn-primary">Call Out</button>
+          </li>
+        </ul>
+      <div>
     </nav>
   </header>
   <!-- HOME | JUMBOTRON -->
@@ -66,26 +75,48 @@
       </div>
     </div>
   </section>
-  <!-- MAIN | CONTENT -->
+  <!-- Main | Content -->
   <main id="content">
     <div id="content-background">
+      <!-- About -->
       <section id="about">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi..</p>
+      <!-- Projects -->
+      <section id="project">
+        <!-- Projects Row 1 -->
+        <div class="project-container flex-container-row">
+          <div class="project flex-item">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi..</p>
+          </div>
+          <div class="project flex-item">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
+        <!-- Projects Row 2 -->
+        <div class="project-container flex-container-row">
+          <div class="project flex-item">
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi..</p>
+          </div>
+          <div class="project flex-item">
+            <h3>Project 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Project 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
+        <!-- Projects Row 3 -->
+        <div class="project-container flex-container-row">
+          <div class="project flex-item">
+            <h3>Project 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi..</p>
+          </div>
+          <div class="project flex-item">
+            <h3>Project 6</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus sed dui nec lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean semper ac elit quis consectetur. Donec luctus est sed libero aliquam facilisis. Fusce vitae massa semper, aliquam nisi vitae, bibendum nisi. Integer iaculis, elit eu euismod feugiat, lectus arcu lacinia sapien, vitae tempus ante dolor sit amet purus. Curabitur consectetur laoreet erat, eget volutpat lectus cursus eu. Aenean tincidunt, est ac tristique lacinia, nibh purus bibendum enim, non pulvinar leo purus in mi.</p>
+          </div>
         </div>
       </section>
       <!--
