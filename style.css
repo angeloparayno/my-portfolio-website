@@ -13,7 +13,7 @@
   --brand-color-ut-orange: #FB8500;
 
   --radius: 0;
-  
+
   /*
   --dev-outline-line: 2px;
   --dev-outline-1:red;
@@ -21,6 +21,7 @@
   --dev-outline-3:blue;
   --dev-outline-4:black;
   */
+  
 }
 
 *, 
@@ -79,36 +80,36 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 /* ---------- Logo ---------- */
+#logo-container {
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+}
 .logo {
   font-size: 50px;
   margin: 1rem 1rem;
   color: var(--gray1-color);
   transition: all 200ms ease-in;
-}
-#logo-container {
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 .logo:hover {
   color: white;
 }
 /* ---------- Navbar List ---------- */
-.navbar-list {
+.navbar-links {
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
-.navbar-list ul {
+.navbar-links ul {
   margin: 0;
   padding: 0;
 
   display: flex;
   align-items: center;
 }
-.navbar-list li {
+.navbar-links li {
   list-style: none;
 }
-.navbar-list li a {
+.navbar-links li a {
   text-decoration: none;
   color: var(--gray4-color);
   padding: 1rem;
@@ -119,7 +120,7 @@ body {
 
   transition: all 200ms ease-in;
 }
-.navbar-list li a:hover {
+.navbar-links li a:hover {
   color: #FB8500;
 }
 /* ---------- Nav Toggle ---------- */
@@ -144,7 +145,7 @@ body {
   .toggle-button {
     display:flex;
   }
-  .navbar-list {
+  .navbar-links {
     display:none;
     width: 100%;
   }
@@ -152,17 +153,17 @@ body {
     flex-direction: column;
     align-items: flex-start;  
   }
-  .navbar-list ul {
+  .navbar-links ul {
     width: 100%; 
     flex-direction: column;
   }
-  .navbar-list li {
+  .navbar-links li {
     text-align: center;
   }
-  .navbar-list li a {
+  .navbar-links li a {
     padding: .5rem 1rem;
   }
-  .navbar-list.active {
+  .navbar-links.active {
     display: flex;
   }
 }
