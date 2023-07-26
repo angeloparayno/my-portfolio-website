@@ -15,13 +15,13 @@
   --brand-color-ut-orange: #FB8500;
 
   --radius: 0;
-  /*
+  
   --dev-outline-line: 2px;
   --dev-outline-1:red;
   --dev-outline-2:green;
   --dev-outline-3:blue;
   --dev-outline-4:black;
-  */
+  
 }
 
 *, 
@@ -79,6 +79,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
 }
 /* ---------- Logo ---------- */
 .logo {
@@ -95,26 +97,14 @@ body {
 }
 /* ---------- Navbar List ---------- */
 .navbar-list {
-/*
-display: flex;
-border: var(--dev-outline-line) solid var(--dev-outline-2);
-font-weight: bold;
-margin: 0;
-padding: 1rem 0;
-
-border-radius: var(--radius);
-justify-content:end;
-align-items: center;
-margin: .5rem 1.5rem;
-*/
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 
 .navbar-list ul {
   margin: 0;
   padding: 0;
-  display: flex;
 
+  display: flex;
   align-items: center;
 }
 .navbar-list li {
@@ -378,7 +368,6 @@ border: var(--dev-outline-line) solid var(--dev-outline-1);
   text-align: center;
   min-width: 512px;
   border: var(--dev-outline-line) solid var(--dev-outline-2);
-}
 }
 /* ---------- Large Tablet ---------- */
 @media only screen and (min-width: 1025px) {
