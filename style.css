@@ -305,9 +305,9 @@ body {
 .about-image-container {
   flex: 0 1 0;
 
-  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
