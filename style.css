@@ -14,13 +14,13 @@
 
   --radius: 0;
 
-
+/*
   --dev-outline-line: 2px;
   --dev-outline-1:red;
   --dev-outline-2:green;
   --dev-outline-3:blue;
   --dev-outline-4:black;
-  
+*/
 }
 
 *, 
@@ -292,31 +292,46 @@ body {
 .about-column {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
+/* ---------- About Text Container ---------- */
 .about-text-container {
   flex: 1;
 
   align-items: center;
 }
-.about-text-background {
+.about-text {
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
+/* ---------- About Image Container ---------- */
 .about-image-container {
-  flex: 0 1 auto;
+  flex: 0 1 0;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+
   border: var(--dev-outline-line) solid var(--dev-outline-1);
-  background-color: var(--brand-color-prussian-blue);
 
-  padding: 1%;
+  
+  padding: .5%;
+  
+  border-radius: 1%;
+  
+  background-color: var(--gray1-color);
+  
 }
-.about-image-background {
-
+.about-image {
   height: 250px;
-  width: 320px;
+  width: calc(250px * 16/9);
 
-  background-image: url(assets/jumbotron-img.jpg);
+  background-image: url(assets/sample.jpg);
+  filter:grayscale(1);
+
   background-size: cover;
   background-position: center;
+
   
-  border-radius: 25%;
+  border-radius: 1%;
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 
