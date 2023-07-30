@@ -13,14 +13,15 @@
   --brand-color-ut-orange: #FB8500;
 
   --radius: 0;
-  --max-width: 1440px;
+  --max-width: 1280px;
 
-
+  /*
   --dev-outline-line: 2px;
   --dev-outline-1:red;
   --dev-outline-2:green;
   --dev-outline-3:blue;
   --dev-outline-4:black;
+  */
   
 }
 
@@ -301,16 +302,14 @@ body {
 }
 /* ---------- About Image Container ---------- */
 .about-image-container {
-
-
-  max-width: calc(var(--max-width)/ 2.5);
+  max-width: calc(var(--max-width)/ 3.33);
 
   width: auto;
   height: auto;
 
   padding: .5%;
   border-radius: 1%;
-  background-color: var(--gray1-color);
+  background-color: var(--gray4-color);
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   
@@ -324,8 +323,6 @@ body {
   border-radius: 1%;
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
-
-
 @media only screen and (max-width: 770px) {
   #about-row-2 {
     flex-direction: column-reverse;
@@ -440,10 +437,4 @@ h1 {
   }
 p {
 line-height: 2rem;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
