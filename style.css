@@ -18,9 +18,8 @@
   /*
   --dev-outline-line: 2px;
   --dev-outline-1:red;
-  --dev-outline-2:green;
-  --dev-outline-3:blue;
-  --dev-outline-4:black;
+  --dev-outline-2:blue;
+  --dev-outline-3: green;
   */
 }
 
@@ -82,6 +81,8 @@ body {
 }
 /* ---------- Logo ---------- */
 #logo-container {
+  margin: 0 5px;
+
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 .logo {
@@ -196,23 +197,28 @@ body {
   background-image: url(assets/jumbotron-img.jpg);
   background-size: cover;
   background-position: center;
+  
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- Jumbotron - Welcome Message & Photo Container ---------- */
 #profile-container {
   align-items: center;
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #profile-name-container {
   padding: 5px;
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
+
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 #welcome-text {
   text-align: center;
-  border: var(--dev-outline-line) solid var(--dev-outline-3);
+  
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 #profile-image-container {
   padding: 5px;
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
   justify-content: center;
 }
 #profile-image-circle {
@@ -220,7 +226,7 @@ body {
   height: 250px;
 
   border-radius: 50%;
-  border: var(--dev-outline-line) solid var(--dev-outline-3);
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 
   background-image: url(assets/profile-pic-1.jpg);
   background-size: cover;
@@ -228,17 +234,16 @@ body {
 }
 /* ---------- Jumbotron - Title Roles Container ---------- */
 #title-roles-container {
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
-  align-items: center;
-
   margin: 25px 0;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #title-roles {
   text-align: center;
   align-items: center;
   list-style-type: none;
 
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 #title-roles li {
   display: inline-block;
@@ -249,14 +254,14 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 
-  border: var(--dev-outline-line) solid var(--dev-outline-3);
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 .title-emoji {
   font-size: 1.35rem;
 }
 /* ---------- Jumbotron - Social Media Icons Container ---------- */
 #icons-link-container {
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #icons-link {
   text-align: center;
@@ -277,15 +282,17 @@ body {
   justify-content: center;
 }
 #content-container {
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
   max-width: var(--max-width);
   background-color: white;
   padding: 2rem;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- About ---------- */
 #about {
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
   margin-bottom: 2rem;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 .about-row {
   border: var(--dev-outline-line) solid var(--dev-outline-3);
