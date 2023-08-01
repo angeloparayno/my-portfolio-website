@@ -22,7 +22,6 @@
   --dev-outline-3:blue;
   --dev-outline-4:black;
   */
-  
 }
 
 *, 
@@ -126,7 +125,7 @@ body {
 /* ---------- Nav Toggle ---------- */
 .toggle-button {
   position: absolute;
-  top: 1.45rem;
+  top: 1.20rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -232,20 +231,21 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   align-items: center;
 
-  color: white;
+  margin: 50px 0;
 }
 #title-roles {
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
   text-align: center;
   align-items: center;
   list-style-type: none;
-  margin: 20px 0;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #title-roles li {
   display: inline-block;
   margin-right: 7px;
   margin-left: 7px;
 
+  color: white;
   font-size: 1.25rem;
   font-weight: bold;
 
@@ -312,7 +312,6 @@ body {
   background-color: var(--gray4-color);
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
-  
 }
 .about-image {
   height: 100%;
