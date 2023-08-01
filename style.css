@@ -231,7 +231,7 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   align-items: center;
 
-  margin: 50px 0;
+  margin: 25px 0;
 }
 #title-roles {
   text-align: center;
