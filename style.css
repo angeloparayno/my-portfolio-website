@@ -72,6 +72,7 @@ body {
   height: auto;
   width: 100%;
   background-color: var(--gray1-color);
+  
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 
   display: flex;
@@ -107,7 +108,10 @@ body {
   align-items: center;
 }
 .navbar-links li {
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+
   list-style: none;
+  transition: all 200ms ease-in;
 }
 .navbar-links li a {
   text-decoration: none;
@@ -159,8 +163,15 @@ body {
   }
   .navbar-links li {
     text-align: center;
+    width: 100%;
+
+    border: var(--dev-outline-line) solid var(--dev-outline-3);
+  }
+  .navbar-links li:hover {
+    background-color: var(--gray2-color);
   }
   .navbar-links li a {
+
     font-size: 1.5rem;
     padding: .5rem 1rem;
   }
@@ -174,12 +185,12 @@ body {
   font-size: 1rem;
 
   color: white;
-  background-color: var(--gray2-color);
+  background-color: var(--gray1-color);
 
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
-  border-radius:var(--radius);
+  border-radius: 2.5%;
 
   cursor: pointer;
   transition: all 200ms ease-in;
@@ -290,20 +301,35 @@ body {
 #content-container {
   max-width: var(--max-width);
   background-color: white;
-  padding: 2rem;
+
+  padding: 0 1rem;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+/* ---------- Section Attributes ---------- */
+.section-container {
+  margin: 2rem 0;
+  padding: 1rem 0;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+}
+.section-title-heading {
+  padding: 1rem 0;
+  text-align: center;
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- About ---------- */
-#about {
-  margin-bottom: 2rem;
-
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
-}
 .about-row {
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 .about-column {
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+#about-main-text {
+  padding: 1rem;
+  text-align:justify;
+
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- About Text Container ---------- */
@@ -311,6 +337,9 @@ body {
   align-items: center;
 }
 .about-text {
+  padding: 1rem;
+  text-align: justify;
+
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 /* ---------- About Image Container ---------- */
@@ -321,10 +350,10 @@ body {
   height: auto;
 
   padding: .5%;
-  border-radius: 1%;
-  background-color: var(--gray4-color);
 
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
+
+  border-radius: 1%;
+  border: 2px solid var(--gray4-color);
 }
 .about-image {
   height: 100%;
@@ -350,16 +379,10 @@ body {
 }
 
 /* ---------- Projects ---------- */
-/* ---------- Entire Project Container ---------- */
-#projects {
-  border: var(--dev-outline-line) solid var(--dev-outline-2);
-}
-#projects h2 { 
-  margin-bottom: 1rem;
-}
+
 /* ---------- Project Container Per Row ---------- */
 .project-container {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 /* ---------- Each Project Container ---------- */
@@ -408,14 +431,19 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- Project Text ---------- */
-.project-title, .project-description{
-  text-align: center;
-}
 .project-title {
+  text-align: center;
   margin-top: 1rem;
 }
 .project-description {
+  text-align: center;
   font-style: oblique;
+}
+.project-sub-detail {
+  text-align: left;
+}
+.project-button {
+  gap: 1rem;
 }
 /* ---------- Project Mobile ---------- */
 @media only screen and (max-width: 770px) {
@@ -525,6 +553,6 @@ p {
 .divider-dashed {
   width: 100%;
   height: 0;
-  border-top: 3px dashed #999; /* Adjust thickness and color as needed */
+  border-top: 3px dashed var(--gray4-color); /* Adjust thickness and color as needed */
   margin: 20px 0; /* Add spacing above and below the divider */
 }
