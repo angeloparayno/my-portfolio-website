@@ -278,6 +278,9 @@ body {
   color: white;
   font-size: 50px;
 }
+.icon:hover {
+  opacity: 75%;
+}
 /* ---------- Main ---------- */
 #content {
   flex-grow:1;
@@ -371,14 +374,17 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   */
 }
+
+/*
 #project-8 {
   border: 0px solid white;
 }
-/*
+
 #project-1,#project-4,#project-5,#project8 {
   background-color: #ccc;
 }
 */
+
 /* ---------- Project Image Container ---------- */
 .project-image-container {
   max-width: 270px;
