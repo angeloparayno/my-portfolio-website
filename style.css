@@ -371,12 +371,6 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   */
 }
-.project-side-A {
-  margin-right: .5rem;
-}
-.project-side-B {
-  margin-left: .5rem;
-}
 #project-8 {
   border: 0px solid white;
 }
@@ -387,7 +381,7 @@ body {
 */
 /* ---------- Project Image Container ---------- */
 .project-image-container {
-  max-width: 360px;
+  max-width: 270px;
   width: auto;
   height: auto;
 
@@ -430,7 +424,7 @@ body {
     margin-left:0;
   }
   .project {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1.5rem;
   }
 }
