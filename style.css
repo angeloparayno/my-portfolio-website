@@ -387,13 +387,15 @@ body {
 */
 /* ---------- Project Image Container ---------- */
 .project-image-container {
-  max-width: 350px;
+  max-width: 360px;
   width: auto;
   height: auto;
 
   margin: auto;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
+
+  border: 1px solid black;
 }
 .project-image {
   height: 100%;
@@ -415,16 +417,21 @@ body {
 .project-description {
   font-style: oblique;
 }
+/* ---------- Project Mobile ---------- */
 @media only screen and (max-width: 770px) {
   .project-container {
     flex-direction: column;
   }
   .project-odd {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     margin-right:0;
   }
   .project-even {
     margin-left:0;
+  }
+  .project {
+    margin: 1rem;
+    padding: 1.5rem;
   }
 }
 /* Styles for the contact form */
