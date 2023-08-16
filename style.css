@@ -208,7 +208,7 @@ body {
 
   border-radius:var(--radius);
 
-  background-image: url(assets/jumbotron-img.jpg);
+  background-image: url(assets/img-jumbotron.jpg);
   background-size: cover;
   background-position: center;
   
@@ -328,7 +328,7 @@ body {
   border-radius: 50%;
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 
-  background-image: url(assets/profile-pic-1.jpg);
+  background-image: url(assets/img-profile-pic.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -518,7 +518,7 @@ body {
 
   border-radius: 2.5%;
 
-  border: 2px dashed var(--gray2-color);
+  border: 2px dashed var(--gray1-color);
   /*
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   */
@@ -652,7 +652,7 @@ footer {
 /* ---------- Footer Texts ---------- */
 .footer-text-container {
   align-items: center;
-  gap: .20rem;
+  gap: .30rem;
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 #footer-right .footer-text-container {
