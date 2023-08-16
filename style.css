@@ -280,7 +280,10 @@ body {
   0% {
     transform: translate(var(--shiftX), var(--shiftY));
   }
-  /*
+  100% {
+    transform: translate(0px, 0px);
+  }
+    /*
   50% {
     transform: translate(0px, 0px);
   }
@@ -291,9 +294,6 @@ body {
     transform: translate(var(--shiftY), var(--shiftX));
   }
   */
-  100% {
-    transform: translate(0px, 0px);
-  }
   
 }
 /* ---------- Jumbotron - Photo Container ---------- */

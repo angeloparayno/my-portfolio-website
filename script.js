@@ -7,10 +7,10 @@ toggleButton.addEventListener('click', () => {
 })
 
 // Animation Variable Randomizer
-const welcomeLetters = document.querySelectorAll('.welcome-letter');
+const welcomeLetters = document.querySelectorAll('.welcome-letter')
 
 welcomeLetters.forEach(letter => {
   // Apply random pixel shifts as CSS custom properties
-  letter.style.setProperty('--shiftX', `${Math.random() * 500 - 250}px`);
-  letter.style.setProperty('--shiftY', `${Math.random() * 500 - 250}px`);
-});
+  letter.style.setProperty('--shiftX', `${Math.random() * 500 - 250}px`)
+  letter.style.setProperty('--shiftY', `${Math.random() * 500 - 250}px`)
+})
