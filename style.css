@@ -1,3 +1,4 @@
+/* ---------- ========== Initialization ========== ---------- */
 :root {
   --primary-color: rgb(77,93,87);
   --secondary-color: rgb(238,207,73);
@@ -13,7 +14,7 @@
   --brand-color-ut-orange: #FB8500;
 
   --radius: 0;
-  --max-width: 1280px;
+  --max-width: 1080px;
 
   /*
   --dev-outline-line: 2px;
@@ -47,6 +48,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* ---------- ========== Initialization End ========== ---------- */
+
+/* ---------- ========== Flex Box Attribute ========== ---------- */
 /* ---------- Flex Containers ---------- */
 .flex-container-row {
   display: flex;
@@ -64,10 +68,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* ---------- Flex Item ---------- */
 .flex-item {
   flex: 1;
 }
-/* ---------- Navbar ---------- */
+/* ---------- ========== Flex Box Attribute End ========== ---------- */
+
+/* ---------- ========== Navbar ========== ---------- */
 #navbar {
   height: auto;
   width: 100%;
@@ -80,7 +87,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-/* ---------- Logo ---------- */
+/* ---------- Navbar Logo ---------- */
 #logo-container {
   margin: 0 5px;
 
@@ -90,11 +97,23 @@ body {
   font-size: 3.5rem;
   margin: .25rem .25rem;
   color: var(--gray1-color);
-  transition: all 200ms ease-in;
   border: var(--dev-outline-line) solid var(--dev-outline-3);
+
+  transition: all 200ms ease-in;
+  animation: pulsate-color-logo 3s 1;
 }
 .logo:hover {
   color: white;
+}
+@keyframes pulsate-color-logo {
+  0%, 100% {
+    color: var(--gray1-color);
+    transform: scale(.7);
+  }
+  50% {
+    color: white;
+    transform: scale(1);
+  }
 }
 /* ---------- Navbar List ---------- */
 .navbar-links {
@@ -144,6 +163,7 @@ body {
   background-color: var(--gray4-color);
   border-radius: 10px;
 }
+/* ---------- Nav Mobile ---------- */
 @media only screen and (max-width: 770px)
 {
   .toggle-button {
@@ -179,26 +199,9 @@ body {
     display: flex;
   }
 }
-/* ---------- Button ---------- */
-.btn-primary {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+/* ---------- ========== Navbar End ========== ---------- */
 
-  color: white;
-  background-color: var(--gray1-color);
-
-  border: none;
-  outline: none;
-  padding: 0.5rem 1rem;
-  border-radius: 2.5%;
-
-  cursor: pointer;
-  transition: all 200ms ease-in;
-}
-.btn-primary:hover {
-  background-color: var(--brand-color-ut-orange)
-}
-/* ---------- Jumbotron ---------- */
+/* ---------- ========== Jumbotron ========== ---------- */
 #jumbotron {
   width: auto;
   height: 800px;
@@ -217,23 +220,88 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
+/* ---------- Jumbotron - Welcome Message ---------- */
 #profile-name-container {
   padding: 5px;
 
+
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
+/* Welcome Message (Standard) */
 #welcome-text {
   text-align: center;
+  display: inline-block;
 
   font-size: 3rem;
   color: white;
   
   border: var(--dev-outline-line) solid var(--dev-outline-1);
+
+  transition: all 200ms ease-in;
 }
+#welcome-text:hover {
+  scale: 1.1;
+}
+/* Letter Container */
+/* Welcome Message (Animated Ea Letters) */
+.letters-container {
+  display: flex;
+  justify-content:center;
+  flex-grow: 0;
+
+  margin: 0 .5rem;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+/* Each Letter */
+.welcome-letter {
+  font-size: 3rem;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+
+  transition: all 200ms ease-in;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+}
+/* Welcome Message Animation (Standard) */
+  #welcome-text:hover {
+  scale: 1.1;
+}
+/* Welcome Message Animation */
+#profile-name-container:hover .welcome-letter:nth-child(n) {
+  transform: translate(var(--shiftX), var(--shiftY));
+  transition: 1.5s;
+}
+.welcome-letter:nth-child(n) {
+  animation: translate-welcome-text-1 3s 1;
+}
+@keyframes translate-welcome-text-1 {
+  0% {
+    transform: translate(var(--shiftX), var(--shiftY));
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  90% {
+    transform: translate(0px, 0px);
+  }
+  95% {
+    transform: translate(var(--shiftY), var(--shiftX));
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+  
+}
+/* ---------- Jumbotron - Photo Container ---------- */
 #profile-image-container {
   padding: 5px;
   border: var(--dev-outline-line) solid var(--dev-outline-3);
   justify-content: center;
+
+  animation: pulsate-profile-pic 3s 1;
+  transition: all 200ms ease-in;
 }
 #profile-image-circle {
   width: 250px;
@@ -246,6 +314,19 @@ body {
   background-size: cover;
   background-position: center;
 }
+#profile-image-container:hover {
+  scale: 1.05;
+}
+
+@keyframes pulsate-profile-pic {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+*/
 /* ---------- Jumbotron - Title Roles Container ---------- */
 #title-roles-container {
   margin: 25px 0;
@@ -291,8 +372,11 @@ body {
 }
 .icon:hover {
   opacity: 75%;
+  scale: 1.2
 }
-/* ---------- Main ---------- */
+/* ---------- ========== Jumbotron End ========== ---------- */
+
+/* ---------- ========== ////////// Main ////////// ========== ---------- */
 #content {
   flex-grow:1;
   display: flex;
@@ -306,7 +390,7 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
-/* ---------- Section Attributes ---------- */
+/* ---------- ========== Section Attributes ========== ---------- */
 .section-container {
   margin: 1rem 0;
   padding: 1rem 0;
@@ -322,8 +406,14 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
-/* ---------- About ---------- */
+/* ---------- ========== Section Attributes End ========== ---------- */
+
+/* ---------- ========== About ========== ---------- */
 .about-row {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  justify-content: center;
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 .about-column {
@@ -353,7 +443,8 @@ body {
   height: auto;
 
   padding: 1rem;
-
+  filter:grayscale(100%); 
+  transition: all 1500ms ease;
   /*
   border-radius: 1%;
   border: 2px solid var(--gray4-color);
@@ -362,13 +453,20 @@ body {
 .about-image {
   height: 100%;
   width: 100%;
-
-  /* filter:grayscale(1); */
   
   border-radius: 1%;
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
+/* About Image Animation */
+.about-image-container:hover {
+  transform: rotateY(360deg);
+  filter:none;
+}
 @media only screen and (max-width: 770px) {
+  .about-row {
+    margin: 0 0; 
+    border: var(--dev-outline-line) solid var(--dev-outline-3);
+  }
   #about-row-2 {
     flex-direction: column-reverse;
     align-items: center;
@@ -381,16 +479,20 @@ body {
     max-width: 770px;
   }
 }
+/* ---------- ========== About End ========== ---------- */
 
-/* ---------- Projects ---------- */
-/* ---------- Project Container Per Row ---------- */
+/* ---------- ========== Projects ========== ---------- */
+
+/* Project Container Per Row */
 .project-container {
-  margin-bottom: 0;
+
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
-/* ---------- Each Project Container ---------- */
+/* Each Project Container */
 .project {
-  margin: 2rem;
+  max-width: 480px;
+
+  margin: 1rem;
   padding: 2rem;
 
   border-radius: 2.5%;
@@ -400,28 +502,16 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   */
 }
-
-/*
-#project-8 {
-  border: 0px solid white;
-}
-
-#project-1,#project-4,#project-5,#project8 {
-  background-color: #ccc;
-}
-*/
-
 /* ---------- Project Image Container ---------- */
 .project-image-container {
   max-width: 270px;
-  width: auto;
-  height: auto;
-
+  
   margin: auto;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 
   border: 1px solid black;
+  transition: all 200ms ease-in;
 }
 .project-image {
   height: 100%;
@@ -432,6 +522,9 @@ body {
   border-radius: 5%;
   */
   border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+.project-image-container:hover {
+  scale: 1.05;
 }
 /* ---------- Project Text ---------- */
 .project-title {
@@ -453,6 +546,7 @@ body {
   .project-container {
     flex-direction: column;
   }
+  /*
   .project-odd {
     margin-bottom: 0rem;
     margin-right:0;
@@ -460,9 +554,15 @@ body {
   .project-even {
     margin-left:0;
   }
+  */
   .project {
     margin: 1rem 0;
     padding: 1.5rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 480px;
   }
 }
 /* Styles for the contact form */
@@ -483,7 +583,22 @@ form button {
   border: none;
   cursor: pointer;
 }
-/* ---------- Footer ---------- */
+/* ---------- ========== Projects End ========== ---------- */
+
+/* ---------- ========== Return Arrow ========== ---------- */
+#return {
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+  margin-bottom: 3rem;
+}
+.arrow {
+  font-size: 50px;
+  color: var(--gray1-color);
+}
+/* ---------- ========== Return Arrow End ========== ---------- */
+
+/* ---------- ========== ////////// Main End ////////// ========== ---------- */
+
+/* ---------- ========== Footer ========== ---------- */
 footer {
   color: white;
   background-color: var(--gray1-color);
@@ -526,15 +641,28 @@ footer {
     border: var(--dev-outline-line) solid var(--dev-outline-2);
   }
 }
-/* ---------- Others ---------- */
-p {
-  line-height: 2rem;
-  color: var(--gray1-color);
-}
-footer p {
-  color: white;
-}
+/* ---------- ========== Footer End ========== ---------- */
+/* ---------- ========== Others ========== ---------- */
+/* ---------- Button ---------- */
+.btn-primary {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-decoration: none;
 
+  color: white;
+  background-color: var(--gray1-color);
+
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5%;
+
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.btn-primary:hover {
+  background-color: var(--brand-color-ut-orange)
+}
 /* ---------- Divider ---------- */
 .divider {
   width: 100%;
@@ -563,3 +691,13 @@ footer p {
   border-top: 3px dashed var(--gray4-color); /* Adjust thickness and color as needed */
   margin: 20px 0; /* Add spacing above and below the divider */
 }
+/* ---------- Texts ---------- */
+.description {
+  line-height: 2rem;
+  color: var(--gray1-color);
+}
+footer p {
+  color: white;
+}
+/* ---------- ========== Others End ========== ---------- */
+
