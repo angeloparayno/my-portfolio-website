@@ -562,10 +562,26 @@ body {
   text-align: left;
   color: var(--gray1-color);
 }
+/* ---------- Project Buttons ---------- */
 .project-button-container {
   gap: 1rem;
   margin-top: 1rem;
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
+.project-icon-button-container {
+  flex-wrap: nowrap;
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+  gap: 10px;
+}
+.project-icon-container {
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+  padding: 5px 0;
+}
+.project-icon {
+  font-size: 25px;
+  color: var(--gray2-color);
+}
+/* ---------- Project Etc ---------- */
 #project-10 {
   border: 0px none white;
 }
@@ -671,12 +687,15 @@ footer {
   
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
+.footer-text-container a {
+  text-decoration: none;
+}
 /* ---------- Footer Text Color---------- */
 footer p,.footer-icon {
   color: var(--gray3-color);
   transition: all 200ms ease-in;
 }
-footer p:hover,.footer-icon:hover {
+footer p:hover {
   color: var(--brand-color-ut-orange);
   font-weight: bold;
 }
@@ -701,17 +720,21 @@ footer p:hover,.footer-icon:hover {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   text-decoration: none;
-
+  text-align: center;
   color: white;
-  background-color: var(--gray1-color);
+  
+  background-color: var(--gray2-color);
 
+  width: auto;
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
-  border-radius: 5%;
+  border-radius: 2.5%;
 
   cursor: pointer;
   transition: all 200ms ease-in;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 .btn-primary:hover {
   background-color: var(--brand-color-sky-blue);
