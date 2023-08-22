@@ -589,6 +589,14 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 .project-complexity-icon { 
+  transition: all 200ms ease-in;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+}
+.project-complexity-icon:hover { 
+  transition: all 200ms ease-in;
+  scale: 1.3;
+  
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 /* ------ Stars Colors (Gold/Silver/Bronze) ----- */
