@@ -367,13 +367,15 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 
-  transition: all 200ms ease-in;
+  /* transition: all 200ms ease-in; */
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
+/*
 #title-roles li:hover {
   scale: 1.05;
 }
+*/
 .icon-title {
   font-size: 1.35rem;
 }
@@ -559,8 +561,44 @@ body {
   color: black;
 }
 .project-sub-detail {
+  width: 100%;
   text-align: left;
   color: var(--gray1-color);
+}
+/* ---------- Project Complexity ---------- */
+.project-complexity {
+  width: 100%;
+  justify-content: left;
+  
+  gap: 1.5rem;
+
+  flex-wrap: nowrap;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+.project-complexity-container-text {
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+}
+.project-complexity-container-icon {
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: nowrap;
+  border: var(--dev-outline-line) solid var(--dev-outline-2);
+}
+.project-complexity-text { 
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+}
+.project-complexity-icon { 
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+}
+.complexity-b i{
+  color: RGB(139, 69, 19); /* Medium Bronze *//
+}
+.complexity-s i{
+  color: RGB(169, 169, 169); /* Medium Silver *//
+}
+.complexity-g i{
+  color: RGB(205, 149, 12); /* Medium Gold *//
 }
 /* ---------- Project Buttons ---------- */
 .project-button-container {
@@ -579,7 +617,33 @@ body {
 }
 .project-icon {
   font-size: 25px;
-  color: var(--gray2-color);
+  color: var(--gray1-color);
+}
+/* ---------- Button ---------- */
+.btn-primary {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  
+  background-color: var(--gray1-color);
+
+  width: auto;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5%;
+
+  cursor: pointer;
+  transition: all 200ms ease-in;
+
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
+}
+.btn-primary:hover {
+  background-color: var(--brand-color-sky-blue);
+  color: black;
+  font-weight: bold;
 }
 /* ---------- Project Etc ---------- */
 #project-10 {
@@ -596,7 +660,7 @@ body {
   }
   .project {
     margin: 1rem 0;
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
     
     margin-left: auto;
     margin-right: auto;
@@ -715,32 +779,6 @@ footer p:hover {
 /* ---------- ========== Footer End ========== ---------- */
 
 /* ---------- ========== Others ========== ---------- */
-/* ---------- Button ---------- */
-.btn-primary {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  
-  background-color: var(--gray2-color);
-
-  width: auto;
-  border: none;
-  outline: none;
-  padding: 0.5rem 1rem;
-  border-radius: 2.5%;
-
-  cursor: pointer;
-  transition: all 200ms ease-in;
-
-  border: var(--dev-outline-line) solid var(--dev-outline-3);
-}
-.btn-primary:hover {
-  background-color: var(--brand-color-sky-blue);
-  color: black;
-  font-weight: bold;
-}
 /* ---------- Divider ---------- */
 .divider {
   width: 100%;
