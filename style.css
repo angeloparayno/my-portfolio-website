@@ -591,6 +591,7 @@ body {
 .project-complexity-icon { 
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
+/* ------ Stars Colors (Gold/Silver/Bronze) ----- */
 .complexity-b i{
   color: RGB(139, 69, 19); /* Medium Bronze *//
 }
@@ -600,6 +601,25 @@ body {
 .complexity-g i{
   color: RGB(205, 149, 12); /* Medium Gold *//
 }
+/* ------ Stars Colors (Red-to-Green) ----- */
+/* Cal Poly Green | Dartmouth Green | Xanthous | Cinnabar | Fire Brick */
+/*
+.complexity-level-1 i{
+  color: #094A25; 
+}
+.complexity-level-2 i{
+  color: #0C6B37;
+}
+.complexity-level-3 i{
+  color: #F8B324;
+}
+.complexity-level-4 i{
+  color: #EB442C; 
+}
+.complexity-level-5 i{
+  color: #094A25; 
+}
+*/
 /* ---------- Project Buttons ---------- */
 .project-button-container {
   gap: 1rem;
