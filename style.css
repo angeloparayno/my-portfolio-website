@@ -459,7 +459,7 @@ body {
   color: black;
 
   padding: 1rem;
-  text-align: left;
+  text-align: justify;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
@@ -488,6 +488,9 @@ body {
   .about-row {
     margin: 0 0; 
     border: var(--dev-outline-line) solid var(--dev-outline-3);
+  }
+  .about-text {
+    text-align: center;
   }
   #about-row-2 {
     flex-direction: column-reverse;
@@ -837,5 +840,18 @@ footer p:hover {
 /* ---------- Texts ---------- */
 .description,.project-sub-detail {
   line-height: 2rem;
+}
+.coop {
+  color: #3366FF;
+}
+.about-links {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: all 200ms ease-in;
+}
+.about-links:hover {
+  color: var(--brand-color-ut-orange);
 }
 /* ---------- ========== Others End ========== ---------- */
