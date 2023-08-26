@@ -436,7 +436,7 @@ body {
   font-size: 2.25rem;
   color: var(--gray1-color);
 
-  border: var(--dev-outline-line) solid var(--dev-outline-1);
+  border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
 /* ---------- ========== Section Attributes End ========== ---------- */
 
@@ -452,8 +452,6 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 #about-main-text {
-  padding: 1rem;
-
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 /* ---------- About Text Container ---------- */
@@ -463,7 +461,7 @@ body {
 .about-text {
   color: black;
 
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   text-align: justify;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
