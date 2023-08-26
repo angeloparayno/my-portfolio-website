@@ -848,13 +848,13 @@ footer p:hover {
   color: #3366FF;
 }
 .about-links {
-  color: var(--brand-color-ut-orange);
+  color: var(--brand-color-blue-green);
   text-decoration: none;
   font-weight: bold;
 
   transition: all 200ms ease-in;
 }
 .about-links:hover {
-  color: var(--brand-color-blue-green);
+  color: var(--brand-color-ut-orange);
 }
 /* ---------- ========== Others End ========== ---------- */
