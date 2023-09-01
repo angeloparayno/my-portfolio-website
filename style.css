@@ -7,6 +7,11 @@
   --gray3-color: rgb(153,153,153);
   --gray4-color: rgb(204,204,204);
 
+  --gray40-color: rgb(40,40,40);
+  --gray60-color: rgb(60,60,60);
+  --gray80-color: rgb(80,80,80);
+  --gray240-color: rgb(240,240,240);
+
   --brand-color-sky-blue: #8ECAE6;
   --brand-color-blue-green: #219EBC;
   --brand-color-prussian-blue: #023047;
@@ -78,7 +83,7 @@ body {
 #navbar {
   height: auto;
   width: 100%;
-  background-color: var(--gray1-color);
+  background-color: var(--gray40-color);
   
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 
@@ -96,7 +101,7 @@ body {
 .logo {
   font-size: 3.5rem;
   margin: .25rem .25rem;
-  color: var(--gray1-color);
+  color: var(--gray40-color);
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 
   transition: all 500ms ease-in;
@@ -107,7 +112,7 @@ body {
 }
 @keyframes pulsate-color-logo {
   0%, 100% {
-    color: var(--gray1-color);
+    color: var(--gray40-color);
     transform: scale(.7);
   }
   50% {
@@ -352,12 +357,11 @@ body {
 
 /* ---------- Jumbotron - Title Roles Container ---------- */
 #title-roles-container {
-  margin: 1.75rem 0;
+  margin: 1.25rem 0;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #title-roles {
-  margin: 1rem 0;
   text-align: center;
   align-items: center;
   list-style-type: none;
@@ -366,8 +370,7 @@ body {
 }
 #title-roles li {
   display: inline-block;
-  margin-right: 7px;
-  margin-left: 7px;
+  margin: 0.35rem .5rem;
 
   color: white;
   font-size: 1.25rem;
@@ -429,25 +432,41 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 .section-title-heading {
-  padding: 1rem 0;
+  margin: 2.5rem 0;
+  padding: .15rem 0;
+
   text-align: center;
 
   font-weight: bold;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 2.25rem;
-  color: var(--gray1-color);
 
-  border: var(--dev-outline-line) solid var(--dev-outline-3);
+  color: black;
+
+  border-radius: 1%;
+
+  border-top: 2px solid var(--gray60-color);
+  border-bottom: 2px solid var(--gray60-color);
 }
 /* ---------- ========== Section Attributes End ========== ---------- */
 
 /* ---------- ========== About ========== ---------- */
 .about-row {
-  margin: 0 auto;
+  margin: 0rem auto;
   max-width: 1000px;
 
   justify-content: center;
+  
   border: var(--dev-outline-line) solid var(--dev-outline-3);
+}
+.about-row-gaps{ 
+  margin: 1.5rem auto;
+}
+#about-row-2 {
+  background-color: var(--gray240-color)
+}
+#about-row2-column1 {
+  padding: 1rem;;
 }
 .about-column {
   border: var(--dev-outline-line) solid var(--dev-outline-1);
@@ -517,6 +536,7 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-3);
 }
+
 /* Each Project Container */
 .project {
   max-width: 480px;
@@ -526,7 +546,9 @@ body {
 
   border-radius: 2.5%;
 
-  border: 2px dashed var(--gray1-color);
+  border: 2px solid var(--gray1-color);
+
+  background-color: var(--gray240-color);
   /*
   border: var(--dev-outline-line) solid var(--dev-outline-1);
   */
@@ -564,7 +586,7 @@ body {
 .project-description {
   text-align: center;
   font-style: oblique;
-  color: black;
+  color: var(--gray1-color);
 }
 .project-sub-detail {
   width: 100%;
@@ -610,7 +632,7 @@ body {
   color: RGB(139, 69, 19); /* Medium Bronze *//
 }
 .complexity-s i{
-  color: RGB(169, 169, 169); /* Medium Silver *//
+  color: RGB(110,110 ,110); /* Dark Silver *//
 }
 .complexity-g i{
   color: RGB(205, 149, 12); /* Medium Gold *//
@@ -651,7 +673,7 @@ body {
 }
 .project-icon {
   font-size: 25px;
-  color: var(--gray1-color);
+  color: var(--gray60-color);
 }
 /* ---------- Button ---------- */
 .btn-primary {
@@ -661,7 +683,7 @@ body {
   text-align: center;
   color: white;
   
-  background-color: var(--gray1-color);
+  background-color: var(--gray60-color);
 
   width: auto;
   border: none;
@@ -682,6 +704,7 @@ body {
 /* ---------- Project Etc ---------- */
 #project-10 {
   border: 0px none white;
+  background: white;
 }
 /* ---------- Project Mobile ---------- */
 @media only screen and (max-width: 770px) {
@@ -744,7 +767,7 @@ form button {
 /* ---------- ========== Footer ========== ---------- */
 footer {
   color: white;
-  background-color: var(--gray1-color);
+  background-color: var(--gray40-color);
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
@@ -827,7 +850,7 @@ footer p:hover {
   margin: 20px 0; /* Adjust margin as needed */
   opacity: 25%;
 }
-.divider-about {
+.divider-title-roles {
   width: 100%;
   height: 3px;
   background-color: white;
@@ -838,19 +861,25 @@ footer p:hover {
 .divider-dashed {
   width: 100%;
   height: 0;
-  border-top: 3px dashed var(--gray2-color); /* Adjust thickness and color as needed */
+  border-top: 3px none var(--gray2-color); /* Adjust thickness and color as needed */
   margin: 20px 0; /* Add spacing above and below the divider */
 }
 /* ---------- Texts ---------- */
 .description,.project-sub-detail {
   line-height: 2rem;
+  font-size: 1.05rem;
 }
 .coop {
   color: #3366FF;
 }
+/*
+#about-text-1,#about-text-2,#about-text-4 {
+  color: var(--gray80-color);
+}
+*/
 .about-links {
-  color: var(--brand-color-blue-green);
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
   font-weight: bold;
 
   transition: all 200ms ease-in;
