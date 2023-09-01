@@ -349,14 +349,15 @@ body {
     filter: grayscale(1);
   }
 }
-*/
+
 /* ---------- Jumbotron - Title Roles Container ---------- */
 #title-roles-container {
-  margin: 25px 0;
+  margin: 1.75rem 0;
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 #title-roles {
+  margin: 1rem 0;
   text-align: center;
   align-items: center;
   list-style-type: none;
