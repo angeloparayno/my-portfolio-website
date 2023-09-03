@@ -432,7 +432,7 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 .section-title-heading {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
   padding: .15rem 0;
 
   text-align: center;
@@ -445,8 +445,8 @@ body {
 
   border-radius: 1%;
 
-  border-top: 2px solid var(--gray60-color);
-  border-bottom: 2px solid var(--gray60-color);
+  /*border-top: 2px solid var(--gray60-color);*/
+  /*border-bottom: 2px solid var(--gray60-color);*/
 }
 /* ---------- ========== Section Attributes End ========== ---------- */
 
@@ -890,3 +890,4 @@ footer p:hover {
   color: var(--brand-color-ut-orange);
 }
 /* ---------- ========== Others End ========== ---------- */
+
