@@ -10,7 +10,10 @@
   --gray40-color: rgb(40,40,40);
   --gray60-color: rgb(60,60,60);
   --gray80-color: rgb(80,80,80);
+  --gray100-color: rgb(100,100,100);
+  --gray220-color: rgb(220,220,220);
   --gray240-color: rgb(240,240,240);
+  --gray245-color: rgb(245,245,245);
 
   --brand-color-sky-blue: #8ECAE6;
   --brand-color-blue-green: #219EBC;
@@ -20,8 +23,7 @@
 
   --radius: 0;
   --max-width: 1080px;
-
-  /*
+ /*
   --dev-outline-line: 3px;
   --dev-outline-1:red;
   --dev-outline-2: green;
@@ -463,7 +465,7 @@ body {
   margin: 1.5rem auto;
 }
 #about-row-2 {
-  background-color: var(--gray240-color)
+  background-color: var(--gray240-color);
 }
 #about-row2-column1 {
   padding: 1rem;;
@@ -542,11 +544,12 @@ body {
   max-width: 480px;
 
   margin: 1rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
 
+  /*
   border-radius: 2.5%;
-
   border: 2px solid var(--gray1-color);
+  */
 
   background-color: var(--gray240-color);
   /*
@@ -561,7 +564,7 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 
-  border: 1px solid black;
+  
   transition: all 200ms ease-in;
 }
 .project-image {
@@ -569,12 +572,10 @@ body {
   width: 100%;
 
   object-fit: cover;
-  /*
-  border-radius: 5%;
-  */
+
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
-.project-image-container:hover {
+.project-image-container:hover, .project-image-container-custom-1:hover {
   scale: 1.05;
 }
 /* ---------- Project Text ---------- */
@@ -702,7 +703,7 @@ body {
   font-weight: bold;
 }
 /* ---------- Project Etc ---------- */
-#project-10 {
+#project-filler {
   border: 0px none white;
   background: white;
 }
@@ -711,7 +712,7 @@ body {
   .project-container {
     flex-direction: column;
   }
-  #project-10 {
+  #project-filler {
     margin: 0 0;
     padding: 0 0;
   }
@@ -889,5 +890,38 @@ footer p:hover {
 .about-links:hover {
   color: var(--brand-color-ut-orange);
 }
-/* ---------- ========== Others End ========== ---------- */
 
+/* ---------- Image Settings ---------- */
+.img-size-200 {
+  height: auto;
+  width: 200%;
+}
+.img-size-175 {
+  height: auto;
+  width: 175%;
+}
+.img-size-150 {
+  height: auto;
+  width: 150%;
+}
+.img-size-125 {
+  height: auto;
+  width: 125%;
+}
+.img-size-75 {
+  height: auto;
+  width: 75%;
+}
+.img-size-50 {
+  height: auto;
+  width: 50%;
+}
+.img-size-25 {
+  height: auto;
+  width: 25%;
+}
+.img-with-border {
+  border: 1px solid black;
+}
+
+/* ---------- ========== Others End ========== ---------- */
