@@ -378,15 +378,15 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 
-  /* transition: all 200ms ease-in; */
+  transition: all 200ms ease-in; 
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
-/*
+
 #title-roles li:hover {
   scale: 1.05;
 }
-*/
+
 .icon-title {
   font-size: 1.35rem;
 }
