@@ -23,7 +23,8 @@
 
   --radius: 0;
   --max-width: 1080px;
- /*
+ 
+  /*
   --dev-outline-line: 3px;
   --dev-outline-1:red;
   --dev-outline-2: green;
@@ -50,7 +51,7 @@ body {
   min-height: 100vh;
 
   background-color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 
   display: flex;
   flex-direction: column;
