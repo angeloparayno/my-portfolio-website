@@ -506,10 +506,12 @@ body {
   border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
 /* About Image Animation */
+/*
 .about-image:hover {
   transform: rotateY(360deg);
   filter:none;
 }
+*/
 @media only screen and (max-width: 770px) {
   .about-row {
     margin: 0 0; 
@@ -576,9 +578,11 @@ body {
 
   border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
+/*
 .project-image-container:hover, .project-image-container-custom-1:hover {
   scale: 1.05;
 }
+*/
 /* ---------- Project Text ---------- */
 .project-title {
   text-align: center;
