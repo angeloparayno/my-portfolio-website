@@ -976,4 +976,23 @@ footer p:hover {
   border: 1px solid black;
 }
 
+/*
+a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  top: 0px; 
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+}
+*/
+
 /* ---------- ========== Others End ========== ---------- */
