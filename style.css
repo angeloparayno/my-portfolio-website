@@ -51,7 +51,7 @@ body {
   min-height: 100vh;
 
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif; 
 
   display: flex;
   flex-direction: column;
@@ -156,6 +156,7 @@ body {
    /* Font Edits Here */
   font-size: 1.55rem;
   font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-family: Helvetica, Arial, sans-serif; 
   font-weight: normal;
 
   transition: all 200ms ease-in;
@@ -312,7 +313,8 @@ body {
 /* --- Each Letter --- */
 .welcome-letter {
   font-size: 3rem;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   color: white;
 
@@ -421,7 +423,9 @@ body {
   margin: 0.35rem .5rem;
 
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   font-size: 1.25rem;
   font-weight: normal;
 
@@ -488,6 +492,7 @@ body {
   text-align: center;
 
   font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
   font-family: Georgia, 'Times New Roman', Times, serif; 
   font-size: 2.25rem;
 
@@ -730,7 +735,8 @@ body {
 }
 /* ---------- Button ---------- */
 .btn-primary {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Helvetica, Arial, sans-serif; 
+  
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -924,7 +930,7 @@ footer p:hover {
   line-height: 2rem;
   font-size: 1.05rem;
 }
-.coop {
+.about-coop {
   color: #3366FF;
 }
 /*
@@ -936,6 +942,7 @@ footer p:hover {
   color: black;
   text-decoration: underline;
   font-weight: bold;
+  font-weight: normal;
 
   transition: all 200ms ease-in;
 }
