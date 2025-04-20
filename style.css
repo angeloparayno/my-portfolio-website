@@ -313,8 +313,8 @@ body {
 /* --- Each Letter --- */
 .welcome-letter {
   font-size: 3rem;
-  font-family: Helvetica, Arial, sans-serif;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: white;
 
