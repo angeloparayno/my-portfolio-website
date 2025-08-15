@@ -376,7 +376,7 @@ body {
   animation: pulsate-profile-pic 3s 1;
   transition: all 500ms ease-in;
 
-  filter: grayscale(1);
+  /*filter: grayscale(1);*/
 }
 #profile-image-circle {
   width: 250px;
@@ -391,17 +391,17 @@ body {
 }
 #profile-image-container:hover {
   scale: 1.05;
-  filter: grayscale(0);
+  /*filter: grayscale(0);*/
 }
 
 @keyframes pulsate-profile-pic {
   0% {
     opacity: 0%;
-    filter: grayscale(0);
+    /*filter: grayscale(0);*/
   }
   100% {
     opacity: 100%;
-    filter: grayscale(1);
+    /*filter: grayscale(1);*/
   }
 }
 
