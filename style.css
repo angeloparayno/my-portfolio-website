@@ -596,7 +596,8 @@ body {
 
 /* Each Project Container */
 .project {
-  max-width: 480px;
+  /*max-width: 480px;*/
+  width: 480px;
 
   margin: 1rem;
   padding: 4rem 2rem;
