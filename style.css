@@ -24,12 +24,12 @@
   --radius: 0;
   --max-width: 1080px;
   
-  /*
+  
   --dev-outline-line: 3px;
   --dev-outline-1: red;
   --dev-outline-2: green;
   --dev-outline-3: blue;
-  */
+  
 }
 
 *, 
@@ -596,8 +596,8 @@ body {
 
 /* Each Project Container */
 .project {
-  /*max-width: 480px;*/
-  width: 480px;
+  max-width: 480px;
+  /*width: 480px;*/
 
   margin: 1rem;
   padding: 4rem 2rem;
@@ -608,9 +608,9 @@ body {
   */
 
   background-color: var(--gray240-color);
-  /*
+  
   border: var(--dev-outline-line) solid var(--dev-outline-1);
-  */
+  
 }
 /* ---------- Project Image Container ---------- */
 .project-image-container {
